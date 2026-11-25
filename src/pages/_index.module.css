@@ -2,3 +2,30 @@
 
 /* In-flow consent panel: never overlays actions on mobile or desktop. */
 .cookie{position:static;transform:none;margin:12px auto 0;box-shadow:var(--shadow);width:min(1104px,calc(100% - 32px));} @media(max-width:640px){.cookie{gap:8px;margin:10px auto 0;padding:12px}.cookie p{font-size:12px}.cookieActions button{min-height:38px}}
+
+/* A prominent current-question counter, independent from completed answers. */
+.sectionsLabel{font-size:12px;font-weight:650;color:var(--muted-foreground);letter-spacing:.01em}
+.steps{margin:8px 0 18px}
+.steps button{transition:background .18s,color .18s,border-color .18s}
+.questionProgress{background:var(--surface);border:1px solid var(--border);border-radius:15px;padding:18px 20px;margin-bottom:24px}
+.counterRow{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.counter{display:flex;flex-direction:column;line-height:1.1;color:var(--primary);font-size:15px;font-weight:750}
+.counter>div{white-space:nowrap;margin-top:5px;font-variant-numeric:tabular-nums}
+.counter strong{display:inline-block;font-size:44px;letter-spacing:-2px;line-height:1;animation:counterChange .2s ease-out}
+.counterTotal{font-size:25px;font-weight:650;color:var(--muted-foreground);letter-spacing:-.6px}
+.completion{text-align:right;display:flex;flex-direction:column;gap:4px;padding-bottom:2px;color:var(--muted-foreground);font-size:12px;font-weight:650;font-variant-numeric:tabular-nums}
+.completion strong{color:var(--primary);font-size:23px;line-height:1.1}
+.overallProgress{height:10px;background:#dcd2ef;overflow:hidden;border-radius:99px;margin:14px 0 16px}
+.overallProgress i{display:block;height:100%;border-radius:99px;background:var(--primary);transition:width .25s ease}
+.sectionProgress{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;border-top:1px solid var(--border)}
+.sectionHeading{font-size:13px;line-height:1.35;font-weight:750;color:var(--foreground)}
+.localProgress{display:flex;flex-shrink:0;align-items:center;gap:8px;font-size:11px;font-weight:650;color:var(--muted-foreground);white-space:nowrap}
+.localDots{display:flex;gap:3px}
+.localDots i{width:9px;height:9px;border-radius:50%;background:#d9cee9}
+.localDots .localDone{background:var(--primary)}
+.localDots .localCurrent{background:var(--primary);outline:2px solid var(--primary);outline-offset:2px}
+.questionTransition{animation:questionChange .22s ease-out}
+@keyframes questionChange{from{opacity:.55;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes counterChange{from{opacity:.65;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:640px){.questionProgress{padding:13px 14px;margin-bottom:20px}.counter strong{font-size:39px}.counterTotal{font-size:23px}.completion strong{font-size:21px}.sectionProgress{flex-wrap:wrap;gap:8px}.sectionHeading{font-size:12px}.localProgress{width:100%;justify-content:space-between}.overallProgress{margin:11px 0 12px}.sectionsLabel{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.questionTransition,.counter strong{animation:none}.overallProgress i,.steps button{transition:none}}
