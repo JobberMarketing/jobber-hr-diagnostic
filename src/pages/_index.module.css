@@ -48,3 +48,16 @@
 .leadForm h2{font-size:clamp(28px,5vw,38px)}
 @media(max-width:640px){.shareFeature,.emailFeature{padding:18px}.shareFeature h2,.emailFeature h2{font-size:21px}.shareIcon{width:40px;height:40px;flex-basis:40px}.shareFeature .shareButtons>*{width:100%;flex:1 1 100%}.shareFeature .shareSummary{font-size:13px}}
 @media print{.shareFeature,.emailFeature{display:none!important}}
+
+/* Simplified progress and direct plan selection. */
+.auditTop{margin-bottom:12px}
+.planButtons{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 18px}
+.planButtons button{font:inherit;font-weight:700;font-size:14px;min-height:44px;padding:11px 17px;border:1px solid var(--border);border-radius:12px;cursor:pointer;transition:background .15s ease,color .15s ease}
+.planChoice{background:#fff;color:var(--foreground)}
+.planChoice:hover{background:#f0e9ff;border-color:var(--primary)}
+.planActive{background:var(--primary);border-color:var(--primary)!important;color:white}
+.planButtons button:focus-visible{outline:3px solid #b79aff;outline-offset:2px}
+.shareFeature .shareButtons{margin-top:18px}
+.completion{justify-content:center}
+@media(max-width:640px){.planButtons button{flex:1 1 140px}.planButtons{gap:7px}.auditTop{margin-bottom:8px}}
+@media print{.planButtons button[aria-pressed="false"]{display:none}.planButtons button[aria-pressed="true"]{background:white;color:black;border:1px solid #ddd}}
