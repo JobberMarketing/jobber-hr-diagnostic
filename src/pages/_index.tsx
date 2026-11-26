@@ -22,7 +22,7 @@ useEffect(()=>{if(ready)fire("PageView","visit",st.consent)},[ready,st.consent])
 const t=(ro:string,ru:string)=>st.lang==="ro"?ro:ru;
 const update=(p:Partial<State>)=>set(x=>({...x,...p}));
 const scroll=()=>window.scrollTo({top:0,behavior:"auto"});
-const go=(p:Partial<State>)=>{update(p);scroll()};
+const go=(p:Partial<State>)=>{update(p);if(p.stage!==undefined)scroll()};
 const n=ALL_QUESTIONS.filter(q=>[0,1,2].includes(st.answers[q.id] as number)).length;
 const idx=st.index,q=ALL_QUESTIONS[idx],sec=SECTIONS[Math.floor(idx/5)],res=computeResult(st.answers);
 const resultStage=()=>leadEndpoint&&!st.leadSaved?"lead":"results";
