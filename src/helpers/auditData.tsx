@@ -71,9 +71,9 @@ export interface Level {
  * Never invent questions, actions or thresholds here — change only with owner approval.
  */
 export const ANSWER_OPTIONS: { value: AnswerValue; label: L10n }[] = [
-  { value: 0, label: { ru: "Нет / не делаем", ro: "Nu / nu facem" } },
+  { value: 0, label: { ru: "Нет / не делаем", ro: "Nu facem" } },
   { value: 1, label: { ru: "Делаем частично или несистемно", ro: "Facem parțial sau nesistematic" } },
-  { value: 2, label: { ru: "Делаем регулярно и системно", ro: "Facem regulat și sistematic" } },
+  { value: 2, label: { ru: "Делаем регулярно и системно", ro: "Facem regulat" } },
 ];
 
 export const ANSWER_INSTRUCTION: L10n = {
