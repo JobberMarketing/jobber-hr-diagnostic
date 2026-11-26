@@ -95,7 +95,7 @@ export const SECTIONS: Section[] = [
     },
     questions: [
       { id: "q1_1", number: "1.1", sectionId: "recruitment", text: { ru: "Перед началом поиска мы чётко определяем, какого кандидата хотим найти.", ro: "Înainte de a începe căutarea, stabilim clar ce fel de candidat dorim să găsim." } },
-      { id: "q1_2", number: "1.2", sectionId: "recruitment", text: { ru: "HR и руководитель одинаково понимают требования к кандидату.", ro: "HR-ul și managerul înțeleg la fel cerințele față de candidat." } },
+      { id: "q1_2", number: "1.2", sectionId: "recruitment", text: { ru: "HR и руководитель заранее согласовывают требования к кандидату.", ro: "HR-ul și managerul stabilesc de comun acord cerințele pentru candidați înainte de începerea recrutării." } },
       { id: "q1_3", number: "1.3", sectionId: "recruitment", text: { ru: "У нас есть понятный процесс от открытия вакансии до принятия решения о найме.", ro: "Avem un proces clar, de la deschiderea postului vacant până la decizia de angajare." } },
       { id: "q1_4", number: "1.4", sectionId: "recruitment", text: { ru: "Мы понимаем, какие каналы поиска дают нам подходящих кандидатов.", ro: "Înțelegem ce canale de căutare ne aduc candidați potriviți." } },
       { id: "q1_5", number: "1.5", sectionId: "recruitment", text: { ru: "После закрытия вакансии мы анализируем, что сработало, а что нет.", ro: "După închiderea postului vacant, analizăm ce a funcționat și ce nu." } },
@@ -170,9 +170,9 @@ export const SECTIONS: Section[] = [
         id: "q3_1",
         number: "3.1",
         sectionId: "candidate_experience",
-        // Intentional duplicate of 1.1 as in the source; editorial fix pending owner approval.
-        editorialNote: "Duplicate of 1.1 in the source. Kept intentionally until the owner approves a correction.",
-        text: { ru: "Перед началом поиска мы чётко определяем, какого кандидата хотим найти.", ro: "Înainte de a începe căutarea, stabilim clar ce fel de candidat dorim să găsim." },
+        // Editorial correction requested by owner: replace duplicate of 1.1.
+        editorialNote: "Replaces duplicate 1.1; assesses ease and clarity of the application process.",
+        text: { ru: "Мы проверяем, насколько понятен и удобен для кандидата процесс отклика на вакансию.", ro: "Verificăm cât de clar și de simplu este pentru candidat să aplice la un post vacant." },
       },
       { id: "q3_2", number: "3.2", sectionId: "candidate_experience", text: { ru: "Кандидат понимает, на каком этапе находится его кандидатура.", ro: "Candidatul știe în ce etapă se află candidatura sa." } },
       { id: "q3_3", number: "3.3", sectionId: "candidate_experience", text: { ru: "Перед интервью кандидат знает его формат, продолжительность и участников.", ro: "Înainte de interviu, candidatul îi cunoaște formatul, durata și participanții." } },
@@ -322,7 +322,7 @@ export const SECTIONS: Section[] = [
       { id: "q7_1", number: "7.1", sectionId: "hr_analytics", text: { ru: "Мы регулярно знаем, сколько вакансий открыто и на каком они этапе.", ro: "Știm în mod regulat câte posturi vacante sunt deschise și în ce etapă se află." } },
       { id: "q7_2", number: "7.2", sectionId: "hr_analytics", text: { ru: "Мы отслеживаем срок закрытия вакансий.", ro: "Urmărim termenul de închidere a posturilor vacante." } },
       { id: "q7_3", number: "7.3", sectionId: "hr_analytics", text: { ru: "Мы видим, сколько кандидатов проходит через основные этапы воронки.", ro: "Vedem câți candidați trec prin principalele etape ale pâlniei de recrutare." } },
-      { id: "q7_4", number: "7.4", sectionId: "hr_analytics", text: { ru: "Мы понимаем, какие каналы поиска дают лучший результат.", ro: "Înțelegem ce canale de căutare dau cele mai bune rezultate." } },
+      { id: "q7_4", number: "7.4", sectionId: "hr_analytics", text: { ru: "Мы сравниваем эффективность каналов поиска на основе данных о кандидатах и найме.", ro: "Comparăm eficiența canalelor de recrutare pe baza datelor despre candidați și angajări." } },
       { id: "q7_5", number: "7.5", sectionId: "hr_analytics", text: { ru: "HR регулярно использует данные для обсуждения проблем и решений с руководством.", ro: "HR-ul folosește regulat datele pentru a discuta problemele și soluțiile cu conducerea." } },
     ],
     growth: {
